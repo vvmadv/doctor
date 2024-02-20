@@ -1,34 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Maryam</title>
+  <link rel="stylesheet" href="style copy.css">
+  <link rel="stylesheet" href="media.css">
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="../dist/slippry.min.js"></script>
+  <script src="//use.edgefonts.net/cabin;source-sans-pro:n2,i2,n3,n4,n6,n7,n9.js"></script>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="demo.css">
+  <link rel="stylesheet" href="../dist/slippry.css">
+
+  <link rel="stylesheet" href="slick.css">
+  <link rel="stylesheet" href="aos.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="heart.png">
 </head>
+
 <body>
-  <div class="container">
-    <div class="switch">
-      <div class="toggle-button">
-        <div class="toggle"></div>
-        <div class="moon-mask"></div>
-        <div class="circles-wrapper">
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-          <div class="circle"></div>
-        </div>
-      </div>
+
+<!-- NAVIGATION -->
+  <section class="top-nav">
+    <div class="strong-text">
+      Dr. Maryam Yatskovyna
     </div>
-    <div class="text">
-      <p>n</p>
-      <p>ff</p>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+    <ul class="menu">
+      <li> <a href="#">Home</a></li>
+      <li> <a href="#section3">About</a></li>
+      <li> <a href="#section4">Experience</a></li>
+      <li> <a href="#section5">Contact</a></li>
+    </ul>
+  </section>
+
+  <div id="navbar">
+    <div class="test static-header">
+      <div class="strong-text"> <span class="title">Dr. Maryam Yatskovyna</span></div>
+
+      <a href="#">Home</a>
+      <a href="#section3">About</a>
+      <a href="#section4">Experience</a>
+      <a href="#section5">Contact</a>
+      <button class="dark-mode-button">
+        <img class="svgContainer" src="dark-theme.svg" onclick="change()">
+      </button>
     </div>
   </div>
+
+<!-- SIDE BUTTONS -->
+  <div class="icon-bar">
+    <a href="#" class="twitter"><img src="linkedin-svgrepo-com.svg" alt=""><i class="fa fa-twitter"></i></a>
+    <a href="#" class="google"><img src="wordpress-svgrepo-com.svg" alt=""><i class="fa fa-google"></i></a>
+    <a href="#" class="youtube"><img src="viber-svgrepo-com.svg" alt=""><i class="fa fa-youtube"></i></a>
+  </div>
+  <!-- SECTION HOME -->
+ 
   
   <!-- Social Icons -->
   <div class="social-icons">
@@ -39,7 +72,236 @@
       <img src="https://img.icons8.com/office/30/000000/dribbble.png" />
     </a>
   </div>
-<script src="gsap.min.js"></script>
-  <script src="main.js"></script>
+
+
+
+  <section class="about-me container">
+
+
+    <div class="about-me-picture">
+      <img src="doctor.jpg" alt="">
+    </div>
+
+    <div class="about-me-text">
+      <h1>Experienced health professional</h1>
+      <p>Dr. Maryam Yatskovyna</p>
+      <h3>Find out more</h3>
+      <button class="button-down">
+        <a href="#section3"> <img src="arrow.svg" alt="arrow" href="#about"></a>
+      </button>
+
+    </div>
+
+  </section>
+
+  <div class="contact-text">
+    About me
+  </div>
+  <!-- SECTION ABOUT ME -->
+  <section id="section3">
+    <div class="info container">
+      <div class="info-text">
+
+        <p class="quote noto-sans" data-aos="zoom-in-up"> <strong> Medicine is not only a science; it is also an
+            art</strong> </p>
+        <h2 class="info_text " data-aos="zoom-in-up">Hi, I’m Dr. Maryam Yatskovyna, and if you are looking for health
+          advice,
+          you came to the right place</h2>
+
+        <div class="btn-container ">
+          <button class="btn btn-color-2 " onclick="window.open('Resume.docx')">
+            My recommendations
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#section5'">
+            Contact Info
+          </button>
+        </div>
+
+        <span class="strong-text"></span>
+
+
+
+      </div>
+      <div class="info-img">
+        <img src="doctor-info.jpg" alt="">
+
+      </div>
+      <!-- data-aos="fade-left" -->
+    </div>
+
+  </section>
+
+  <button class="button-down" id="section4">
+    <a href="#section4"> <img src="arrow.svg" alt="arrow" href="#about"></a>
+  </button>
+  <div class="contact-text">
+    Education
+  </div>
+
+  <!-- SECTION EDUCATION -->
+  <section class="education container" data-aos="fade-down">
+    <div class="experience-img">
+      <img src="experience.jpg" alt="">
+    </div>
+    <div class="experience-text">
+      <div class="experience-text-1">
+        Doctor of Medicine (M.D.)
+        Graduated from Medical University of Ajman.
+        <div class="university">
+          <img src="univercity.png" alt="">
+        </div>
+      </div>
+      <div class="experience-text-2">
+        <p> Work experience: </p>
+        <p>Kyiv. Ukraine. From 2023 Director of Kyiv International Healthcare Center. </p>
+
+        <div class="gif">
+          <img src="health1.png" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <button class="button-down">
+    <a href="#slideshow-container"> <img src="arrow.svg" alt="arrow" href="#about"></a>
+  </button>
+
+
+
+
+  <!-- SLIDER -->
+
+  <section>
+    <div id="slideshow-container" class="slideshow-container">
+      <div class="slides-styler-wrapper">
+        <div id="slides-container" class="slides-container">
+
+          <div class="slide">
+            <div class="image-container layer1">
+              <div class="image image1"
+                style="background-image: url(pills-or-capsule-in-simple-icon-design-laboratory-stuff-illustration-in-line-art-design-png.webp);">
+              </div>
+            </div>
+            <span class="text layer2 color1">Help</span>
+            <div class="image-container layer3">
+              <div class="image image2"
+                style="background-image: url(png-transparent-first-aid-kit-art-computer-icons-medicine-pharmaceutical-drug-health-care-clinic-first-aid-kit-miscellaneous-rectangle-logo-thumbnail-removebg-preview.png);">
+              </div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <span class="text layer1 color2">Care</span>
+            <div class="image-container layer2">
+              <div class="image" style="background-image: url(add.svg);"></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <div class="image-container layer1">
+              <div class="image image1" style="background-image: url(shape5.png);"></div>
+            </div>
+            <span class="text layer2 color1">Help</span>
+            <div class="image-container layer3">
+              <div class="image image2" style="background-image: url(shape7.png);"></div>
+            </div>
+          </div>
+
+          <div class="slide">
+            <span class="text layer1 color2">Professionalism</span>
+            <div class="image-container layer2">
+              <div class="image"
+                style="background-image: url(cartoon-character-of-female-doctor-in-uniform-or-health-care-consulting-medical-free-png.webp);">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="previous-arrow" class="previous-arrow"></div>
+      <div id="next-arrow" class="next-arrow"></div>
+    </div>
+
+    <button class="button-down">
+      <a href="#section5"> <img src="arrow.svg" alt="arrow" href="#about"></a>
+    </button>
+  </section>
+
+
+  <!-- SECTION CONTACT  -->
+
+  <section id="section5" class="contact-information">
+    <div class="contact-text">
+      Contact Information
+    </div>
+
+
+  </section>
+
+  <section class="section-contact">
+
+    <div class="parent">
+      <div class="child">
+        <div class="child0">
+          <p><strong>Maryam Yatskovyna</strong></p>
+          <p>Phone: +9000111000</p>
+          <p>Address: UAE, Ajman </p>
+          <p>Hours: 11:00 am - 4:00 pm</p>
+
+        </div>
+        <div class="CLASS20">
+          <form action="form-process.php" method="POST" class="formcarry-form">
+            <div class="formcarry-container">
+              <form action="#" method="POST" class="formcarry-form">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="fullName" required placeholder="Please enter your name" />
+
+                <label for="email">Your Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Please enter your email" />
+
+                <label for="message">Your Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                <button type="submit">Send</button>
+              </form>
+            </div>
+        </div>
+      </div>
+  </section>
+ 
+  <!-- SECTION FOOTER -->
+  <!-- <footer class="footer">
+    <p>Copyright © 2024 Maryam Yatskovyna. All Rights Reserved.</p>
+    <img class="wave" src="wave5.png" alt="">
+
+  </footer> -->
+
+  <footer class="footer">
+    <p>Copyright © 2024 Maryam Yatskovyna. All Rights Reserved.</p>
+    
+
+  </footer>
+
+
+
+  <script src="slick.min.js"></script>
+  
+  <script src="aos.js"></script>
+  <!-- <script src="main.js"></script> -->
+
+  <!-- <script src="jquery.min.js"></script> -->
+  
+  <script src="TweenMax.min.js"></script>
+  
+
+  <script src="TESTJS.js"></script>
+  
+  <script src="main1.js"></script>
+
+  <script src="Draggable.min.js"></script>
+  
+
 </body>
+
 </html>
