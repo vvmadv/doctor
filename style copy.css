@@ -234,8 +234,8 @@ a,
 #navbar a {
   text-align: center;
   padding: 12px;
-  font-size: 18px;
- 
+   font-size: 20px;
+ font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 /* Style the logo */
@@ -270,6 +270,7 @@ a,
     float: none;
     display: block;
     text-align: left;
+   
   }
   #navbar-right {
     float: none;
@@ -278,6 +279,7 @@ a,
 
 .test {
   display: flex;
+
 }
 
 .place {
@@ -297,9 +299,8 @@ a,
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 150px;
-  margin-bottom: 157px;
- 
+  padding-top: 94px;
+  margin-bottom: 167px;
 }
 
 .about-me-picture {
