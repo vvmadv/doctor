@@ -1,0 +1,198 @@
+
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 1200px) {
+      .section-contact {
+         display: flex;
+            }
+           
+            .top-nav {
+              display: none;
+                  }
+    } 
+
+    
+  @media only screen and (max-width: 1350px) {
+    .CLASS20 {
+      position: relative;
+      left: 5%;
+      top: 91%;
+    }
+
+    .child {
+      top: 30%;
+      left: 38%;
+      width: 415px;
+    }
+    } 
+   
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .about-me {
+    margin-bottom: 157px
+  }
+
+  .info {
+    flex-wrap: wrap;
+    padding:50px;
+  }
+
+  .info-img > img {
+
+    margin-left: auto;
+}
+
+.info-img {
+  max-width: 100%;
+  padding-top: 20px;
+}
+
+  .education {
+    display: block;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 50px;
+   margin-top: 150px;
+  }
+
+
+ .experience-img > img {
+  display: grid; 
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.experience-text-1, .experience-text-2 {
+  margin: 10px;
+  padding: 30px;
+  
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 690px)  and (max-width: 1350px)  {
+ 
+  .child {
+    /* left: 43%; */
+     left: 50%;
+  }
+
+  .top-nav {
+    display: none;
+        }
+
+}
+
+  
+
+         @media only screen and (min-width: 320px) and (max-width: 690px) {
+          
+        
+          .child {
+            left: 43%;
+            /*  left: 50%; */
+          }
+
+          .CLASS20 {
+              
+            
+            left: 23%;
+            max-width: 75%;
+            height: 100%;
+
+          }
+          
+          .formcarry-form button { 
+         
+            width: 100%;
+          }
+
+          .formcarry-form label { 
+            width: 330px;}
+
+          
+  
+
+         .courasel {
+          max-width: 100%;
+         }
+
+         .slideshow-container .slides-styler-wrapper .slides-container .slide .text {
+          font-size: 4vmax; }
+      
+
+          #section3 {
+            padding-top: 20px;
+          }
+
+          .title {
+            padding-right: 6px;
+        }
+        
+  #navbar {
+    display: none;
+  }
+
+  #hamburger-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 29px;
+  }
+
+  }
+
+  @media only screen and (max-width: 870px) {
+    .education {
+      display: block;
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .experience-img {
+      margin: 0 auto;
+      display: flex;
+      margin-bottom: 20px;
+  }
+    
+    .experience-img img {
+      margin: 0 auto;
+    }
+    .experience-text-1, .experience-text-2 {
+      margin: 10px;
+    }
+
+    #section3 {
+      padding-bottom: 0;
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column-reverse;
+  }
+
+    .info-img {
+      /* max-width: 70%; */
+      display: flex;
+      margin: 0 auto;
+      margin-bottom: 15px;
+  }
+  }
+    
+  
